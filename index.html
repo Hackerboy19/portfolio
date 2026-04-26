@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hackerboy19 - Professional Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-brand">
+      <i class="fas fa-code"></i>
+      <span>Hackerboy19</span>
+    </div>
+    
+    <div class="nav-search">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search posts, projects...">
+    </div>
+
+    <ul class="nav-menu">
+      <li><a href="#feed" class="nav-link active"><i class="fas fa-home"></i><span>Feed</span></a></li>
+      <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i><span>Projects</span></a></li>
+      <li><a href="#skills" class="nav-link"><i class="fas fa-star"></i><span>Skills</span></a></li>
+      <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+      <li><a href="#about" class="nav-link"><i class="fas fa-user"></i><span>About</span></a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Main Container -->
+<div class="main-container">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="profile-card">
+      <div class="profile-banner"></div>
+      <div class="profile-content">
+        <img src="https://i.pravatar.cc/150?img=12" alt="Profile" class="profile-avatar">
+        <h3>Hackerboy19</h3>
+        <p class="profile-title">Full Stack Developer | Tech Enthusiast</p>
+        <p class="profile-bio">Building amazing web experiences with modern technologies</p>
+        <div class="profile-stats">
+          <div class="stat">
+            <span class="stat-value">25+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">5+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-card">
+      <div class="card-header">
+        <h4>Skills</h4>
+      </div>
+      <div class="skills-list">
+        <div class="skill-item">
+          <span class="skill-name">JavaScript</span>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 95%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">React</span>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">CSS & Responsive Design</span>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 92%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Node.js</span>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 88%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-card">
+      <div class="card-header">
+        <h4>Contact Info</h4>
+      </div>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> hackerboy19@email.com</p>
+        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+        <p><i class="fas fa-map-marker-alt"></i> New York, USA</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Feed -->
+  <main class="feed">
+    <!-- Create Post -->
+    <div class="create-post">
+      <div class="create-post-header">
+        <img src="https://i.pravatar.cc/150?img=12" alt="Your avatar" class="avatar-sm">
+        <input type="text" placeholder="Share a project update or thought..." id="postInput" class="create-input">
+      </div>
+      <div class="create-post-actions">
+        <button class="action-btn"><i class="fas fa-image"></i> Media</button>
+        <button class="action-btn"><i class="fas fa-link"></i> Link</button>
+        <button class="action-btn"><i class="fas fa-code"></i> Code</button>
+        <button class="btn-post" id="postBtn">Post</button>
+      </div>
+    </div>
+
+    <!-- Posts Feed -->
+    <div id="feedContainer">
+      <!-- Posts will be loaded here -->
+    </div>
+  </main>
+
+  <!-- Right Sidebar -->
+  <aside class="right-sidebar">
+    <div class="sidebar-card">
+      <div class="card-header">
+        <h4><i class="fas fa-fire"></i> Featured</h4>
+      </div>
+      <div class="featured-list">
+        <div class="featured-item">
+          <h5>#WebDevelopment</h5>
+          <p>Building responsive and modern web applications</p>
+          <span class="featured-count">12 posts</span>
+        </div>
+        <div class="featured-item">
+          <h5>#JavaScript</h5>
+          <p>Tips and tricks for better JavaScript code</p>
+          <span class="featured-count">8 posts</span>
+        </div>
+        <div class="featured-item">
+          <h5>#ReactJS</h5>
+          <p>React best practices and advanced patterns</p>
+          <span class="featured-count">15 posts</span>
+        </div>
+        <div class="featured-item">
+          <h5>#Portfolio</h5>
+          <p>Portfolio projects and case studies</p>
+          <span class="featured-count">5 posts</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-card">
+      <div class="card-header">
+        <h4><i class="fas fa-certificate"></i> Achievements</h4>
+      </div>
+      <div class="achievements-list">
+        <div class="achievement">
+          <i class="fas fa-award"></i>
+          <p>Top Developer Badge</p>
+        </div>
+        <div class="achievement">
+          <i class="fas fa-star"></i>
+          <p>Most Active Contributor</p>
+        </div>
+        <div class="achievement">
+          <i class="fas fa-trophy"></i>
+          <p>Project Showcase Winner</p>
+        </div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<!-- Post Modal -->
+<div class="modal" id="postModal">
+  <div class="modal-content">
+    <button class="modal-close" id="closeModal">&times;</button>
+    <h2>Share Your Update</h2>
+    <div class="modal-body">
+      <div class="modal-author">
+        <img src="https://i.pravatar.cc/150?img=12" alt="">
+        <div>
+          <p class="author-name">Hackerboy19</p>
+          <p class="author-title">Full Stack Developer</p>
+        </div>
+      </div>
+      <textarea id="modalPostText" placeholder="What are you working on today?" class="modal-textarea"></textarea>
+      <div class="modal-media">
+        <button class="media-btn" title="Add image"><i class="fas fa-image"></i></button>
+        <button class="media-btn" title="Add link"><i class="fas fa-link"></i></button>
+        <button class="media-btn" title="Add code"><i class="fas fa-code"></i></button>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-secondary" id="cancelModal">Cancel</button>
+      <button class="btn-primary" id="submitPost">Post</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
